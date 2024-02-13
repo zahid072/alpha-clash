@@ -30,79 +30,85 @@
 
 <body class="bg-[#010313]">
     <main class="bg-[url(./images/background.png)] h-screen bg-no-repeat bg-center">
-        <section id="section1" class="flex justify-center items-center h-screen hidden">
-            <div class="text-white text-center">
-                <h1 class="text-[9rem] font-anton">ALPHABET CLASH</h1>
-                <p class="text-2xl ">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button id="playBtn" class="btn bg-white mt-12 font-semibold text-2xl">Play Now</button>
+        <section id="section1" class="">
+            <div class="flex justify-center items-center h-screen ">
+                <div class="text-white text-center">
+                    <h1 class="text-[9rem] font-anton">ALPHABET CLASH</h1>
+                    <p class="text-2xl ">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+                    <button id="playBtn" class="btn bg-white mt-12 font-semibold text-2xl">Play Now</button>
+                </div>
             </div>
         </section>
         <!-- play ground -->
-        <section id="section2" class="flex justify-center items-center h-screen hidden">
-            <div class="space-y-12">
-                <div
-                    class="w-[1024px] h-96 border-[20px] backdrop-blur rounded-2xl bg-[#ffffffb3] border-gray-600 flex justify-center items-center">
-                    <input id="displayInput" type="text"
-                        class="h-full text-7xl w-full text-center bg-transparent font-bold outline-none">
-                </div>
-                <div>
-                    <div class="flex justify-center gap-1 my-1 w-full *:cursor-pointer">
-                        <kbd class="kbd">q</kbd>
-                        <kbd class="kbd">w</kbd>
-                        <kbd class="kbd">e</kbd>
-                        <kbd class="kbd">r</kbd>
-                        <kbd class="kbd">t</kbd>
-                        <kbd class="kbd">y</kbd>
-                        <kbd class="kbd">u</kbd>
-                        <kbd class="kbd">i</kbd>
-                        <kbd class="kbd">o</kbd>
-                        <kbd class="kbd">p</kbd>
+        <section id="section2" class="hidden">
+            <div class="flex justify-center items-center h-screen">
+                <div class="space-y-12">
+                    <div
+                        class="w-[1024px] h-96 border-[20px] backdrop-blur rounded-2xl bg-[#ffffffb3] border-gray-600 flex justify-center items-center">
+                        <input id="displayInput" type="text"
+                            class="h-full text-7xl w-full text-center bg-transparent font-bold outline-none">
                     </div>
-                    <div class="flex justify-center gap-1 my-1 w-full *:cursor-pointer">
-                        <kbd class="kbd">a</kbd>
-                        <kbd class="kbd">s</kbd>
-                        <kbd class="kbd">d</kbd>
-                        <kbd class="kbd">f</kbd>
-                        <kbd class="kbd">g</kbd>
-                        <kbd class="kbd">h</kbd>
-                        <kbd class="kbd">j</kbd>
-                        <kbd class="kbd">k</kbd>
-                        <kbd class="kbd">l</kbd>
+                    <div>
+                        <div class="flex justify-center gap-1 my-1 w-full *:cursor-pointer">
+                            <kbd class="kbd">q</kbd>
+                            <kbd class="kbd">w</kbd>
+                            <kbd class="kbd">e</kbd>
+                            <kbd class="kbd">r</kbd>
+                            <kbd class="kbd">t</kbd>
+                            <kbd class="kbd">y</kbd>
+                            <kbd class="kbd">u</kbd>
+                            <kbd class="kbd">i</kbd>
+                            <kbd class="kbd">o</kbd>
+                            <kbd class="kbd">p</kbd>
+                        </div>
+                        <div class="flex justify-center gap-1 my-1 w-full *:cursor-pointer">
+                            <kbd class="kbd">a</kbd>
+                            <kbd class="kbd">s</kbd>
+                            <kbd class="kbd">d</kbd>
+                            <kbd class="kbd">f</kbd>
+                            <kbd class="kbd">g</kbd>
+                            <kbd class="kbd">h</kbd>
+                            <kbd class="kbd">j</kbd>
+                            <kbd class="kbd">k</kbd>
+                            <kbd class="kbd">l</kbd>
+                        </div>
+                        <div class="flex justify-center gap-1 my-1 w-full cursor-pointer">
+                            <kbd class="kbd">z</kbd>
+                            <kbd class="kbd">x</kbd>
+                            <kbd class="kbd">c</kbd>
+                            <kbd class="kbd">v</kbd>
+                            <kbd class="kbd">b</kbd>
+                            <kbd class="kbd">n</kbd>
+                            <kbd class="kbd">m</kbd>
+                            <kbd class="kbd">/</kbd>
+                        </div>
                     </div>
-                    <div class="flex justify-center gap-1 my-1 w-full cursor-pointer">
-                        <kbd class="kbd">z</kbd>
-                        <kbd class="kbd">x</kbd>
-                        <kbd class="kbd">c</kbd>
-                        <kbd class="kbd">v</kbd>
-                        <kbd class="kbd">b</kbd>
-                        <kbd class="kbd">n</kbd>
-                        <kbd class="kbd">m</kbd>
-                        <kbd class="kbd">/</kbd>
-                    </div>
-                </div>
-                <div class="flex justify-between items-center">
-                    <div class="bg-purple-600 p-3 rounded-full text-white">
-                        <p class="inline">Life</p>
-                        &nbsp;
-                        <i class="fa-solid fa-heart-circle-plus"></i>
-                        &nbsp;
-                        <span>1</span>
-                    </div>
-                    <div class="bg-blue-600 p-3 rounded-full text-white">
-                        <p class="inline">Score</p>
-                        &nbsp;
-                        <i class="fa-solid fa-dollar-sign"></i>
-                        &nbsp;
-                        <span>1</span>
+                    <div class="flex justify-between items-center">
+                        <div class="bg-purple-600 p-3 rounded-full text-white">
+                            <p class="inline">Life</p>
+                            &nbsp;
+                            <i class="fa-solid fa-heart-circle-plus"></i>
+                            &nbsp;
+                            <span>1</span>
+                        </div>
+                        <div class="bg-blue-600 p-3 rounded-full text-white">
+                            <p class="inline">Score</p>
+                            &nbsp;
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            &nbsp;
+                            <span>1</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="section3" class="flex justify-center items-center h-screen">
-            <div class="text-center p-12 rounded-lg text-white bg-gradient-to-tr to-[#98979700] from-[#ffffff8f]">
-                <h1 class="text-6xl font-semibold font-poppins ">Score: <span>0</span></h1>
-                <button id="playBtn" class="btn mb-6 bg-white mt-12 font-semibold text-2xl">Play Again</button>
-                <p>Practice will make you Pro</p>
+        <section id="section3" class="hidden">
+            <div class="flex justify-center items-center h-screen ">
+                <div class="text-center p-12 rounded-lg text-white bg-gradient-to-tr to-[#98979700] from-[#ffffff8f]">
+                    <h1 class="text-6xl font-semibold font-poppins ">Score: <span>0</span></h1>
+                    <button id="playBtn2" class="btn mb-6 bg-white mt-12 font-semibold text-2xl">Play Again</button>
+                    <p>Practice will make you Pro</p>
+                </div>
             </div>
         </section>
     </main>
