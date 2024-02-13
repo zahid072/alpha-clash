@@ -11,12 +11,19 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
         .font-anton {
             font-family: "Anton", sans-serif;
             font-weight: 400;
             font-style: normal;
+        }
+
+        .font-poppins {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+
         }
     </style>
 </head>
@@ -27,15 +34,16 @@
             <div class="text-white text-center">
                 <h1 class="text-[9rem] font-anton">ALPHABET CLASH</h1>
                 <p class="text-2xl ">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button id="playBtn" class="btn bg-white mt-12 font-semibold text-2xl">Play now</button>
+                <button id="playBtn" class="btn bg-white mt-12 font-semibold text-2xl">Play Now</button>
             </div>
         </section>
         <!-- play ground -->
-        <section id="section2" class="flex justify-center items-center h-screen">
+        <section id="section2" class="flex justify-center items-center h-screen hidden">
             <div class="space-y-12">
                 <div
                     class="w-[1024px] h-96 border-[20px] backdrop-blur rounded-2xl bg-[#ffffffb3] border-gray-600 flex justify-center items-center">
-                    <input id="displayInput" type="text" class="h-full text-7xl w-full text-center bg-transparent font-bold outline-none">
+                    <input id="displayInput" type="text"
+                        class="h-full text-7xl w-full text-center bg-transparent font-bold outline-none">
                 </div>
                 <div>
                     <div class="flex justify-center gap-1 my-1 w-full *:cursor-pointer">
@@ -90,8 +98,12 @@
                 </div>
             </div>
         </section>
-        <section id="section3" class="flex justify-center items-center h-screen font-anton">
-
+        <section id="section3" class="flex justify-center items-center h-screen">
+            <div class="text-center p-12 rounded-lg text-white bg-gradient-to-tr to-[#98979700] from-[#ffffff8f]">
+                <h1 class="text-6xl font-semibold font-poppins ">Score: <span>0</span></h1>
+                <button id="playBtn" class="btn mb-6 bg-white mt-12 font-semibold text-2xl">Play Again</button>
+                <p>Practice will make you Pro</p>
+            </div>
         </section>
     </main>
 
