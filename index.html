@@ -48,44 +48,46 @@
                         <div class="flex justify-center">
                             <h1 class="bg-gray-600 px-6 pb-4 rounded-b-lg text-white">Don't watch keyboard while
                                 playing...</h1>
+
                         </div>
-                        <input id="displayInput" type="text"
-                            class="h-full text-7xl w-full text-center bg-transparent font-bold outline-none">
+                        <div class="flex justify-center items-center w-full h-full">
+                            <p id="displayKey" class=" text-9xl text-center font-bold">Y</p>
+                        </div>
 
                     </div>
                     <div>
                         <div class="flex justify-center gap-1 my-1 w-full *:cursor-pointer">
-                            <kbd class="kbd">q</kbd>
-                            <kbd class="kbd">w</kbd>
-                            <kbd class="kbd">e</kbd>
-                            <kbd class="kbd">r</kbd>
-                            <kbd class="kbd">t</kbd>
-                            <kbd class="kbd">y</kbd>
-                            <kbd class="kbd">u</kbd>
-                            <kbd class="kbd">i</kbd>
-                            <kbd class="kbd">o</kbd>
-                            <kbd class="kbd">p</kbd>
+                            <kbd id="w" class="kbd">w</kbd>
+                            <kbd id="q" class="kbd">q</kbd>
+                            <kbd id="e" class="kbd">e</kbd>
+                            <kbd id="r" class="kbd">r</kbd>
+                            <kbd id="t" class="kbd">t</kbd>
+                            <kbd id="y" class="kbd">y</kbd>
+                            <kbd id="u" class="kbd">u</kbd>
+                            <kbd id="i" class="kbd">i</kbd>
+                            <kbd id="o" class="kbd">o</kbd>
+                            <kbd id="p" class="kbd">p</kbd>
                         </div>
                         <div class="flex justify-center gap-1 my-1 w-full *:cursor-pointer">
-                            <kbd class="kbd">a</kbd>
-                            <kbd class="kbd">s</kbd>
-                            <kbd class="kbd">d</kbd>
-                            <kbd class="kbd">f</kbd>
-                            <kbd class="kbd">g</kbd>
-                            <kbd class="kbd">h</kbd>
-                            <kbd class="kbd">j</kbd>
-                            <kbd class="kbd">k</kbd>
-                            <kbd class="kbd">l</kbd>
+                            <kbd id="a" class="kbd">a</kbd>
+                            <kbd id="s" class="kbd">s</kbd>
+                            <kbd id="d" class="kbd">d</kbd>
+                            <kbd id="f" class="kbd">f</kbd>
+                            <kbd id="g" class="kbd">g</kbd>
+                            <kbd id="h" class="kbd">h</kbd>
+                            <kbd id="j" class="kbd">j</kbd>
+                            <kbd id="k" class="kbd">k</kbd>
+                            <kbd id="l" class="kbd">l</kbd>
                         </div>
                         <div class="flex justify-center gap-1 my-1 w-full cursor-pointer">
-                            <kbd class="kbd">z</kbd>
-                            <kbd class="kbd">x</kbd>
-                            <kbd class="kbd">c</kbd>
-                            <kbd class="kbd">v</kbd>
-                            <kbd class="kbd">b</kbd>
-                            <kbd class="kbd">n</kbd>
-                            <kbd class="kbd">m</kbd>
-                            <kbd class="kbd">/</kbd>
+                            <kbd id="z" class="kbd">z</kbd>
+                            <kbd id="x" class="kbd">x</kbd>
+                            <kbd id="c" class="kbd">c</kbd>
+                            <kbd id="v" class="kbd">v</kbd>
+                            <kbd id="b" class="kbd">b</kbd>
+                            <kbd id="n" class="kbd">n</kbd>
+                            <kbd id="m" class="kbd">m</kbd>
+                            <kbd id="/" class="kbd">/</kbd>
                         </div>
                     </div>
                     <div class="flex justify-between items-center">
@@ -94,14 +96,14 @@
                             &nbsp;
                             <i class="fa-solid fa-heart-circle-plus"></i>
                             &nbsp;
-                            <span>1</span>
+                            <span id="life">4</span>
                         </div>
                         <div class="bg-blue-600 p-3 rounded-full text-white">
                             <p class="inline">Score</p>
                             &nbsp;
                             <i class="fa-solid fa-dollar-sign"></i>
                             &nbsp;
-                            <span>1</span>
+                            <span id="score">0</span>
                         </div>
                     </div>
                 </div>
@@ -110,14 +112,14 @@
         <section id="section3" class="hidden">
             <div class="flex justify-center items-center h-screen ">
                 <div class="text-center p-12 rounded-lg text-white bg-gradient-to-tr to-[#98979700] from-[#ffffff8f]">
-                    <h1 class="text-6xl font-semibold font-poppins ">Score: <span>0</span></h1>
+                    <h1 class="text-6xl font-semibold font-poppins">Score: <span id="finalScore">0</span></h1>
                     <button id="playBtn2" class="btn mb-6 bg-white mt-12 font-semibold text-2xl">Play Again</button>
                     <p>Practice will make you Pro</p>
                 </div>
             </div>
         </section>
     </main>
-
+    <script src="short.js"></script>
     <script src="script.js"></script>
 </body>
 
