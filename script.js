@@ -24,7 +24,6 @@ document.addEventListener("keyup", function (event) {
     if (lifeNumber > 1) {
       lifeString.innerText = life;
     } else {
-      section1.style.display = "none";
       section2.style.display = "none";
       section3.style.display = "block";
       const totalScore = document.getElementById("score").innerText;
@@ -46,10 +45,13 @@ playBtn.addEventListener("click", function () {
   section2.style.display = "block";
   continueGame();
 });
+
 playBtn2.addEventListener("click", function () {
-  section1.style.display = "none";
   section3.style.display = "none";
   section2.style.display = "block";
   document.getElementById("life").innerText = 4;
   document.getElementById("score").innerText = 0;
+  const displayKey = document.getElementById("displayKey").innerText;
+  setDefaultBgColor(displayKey);
+  continueGame();
 });
